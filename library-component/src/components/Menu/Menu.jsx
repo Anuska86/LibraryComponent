@@ -1,10 +1,11 @@
 import React from "react";
+import useToggle from "../Hooks/useToggle";
 
 const MenuContext = React.createContext();
 
 export default function Menu({ children, onOpen }) {
   const [open, toggleOpen] = useToggle({
-    intialValue: false,
+    initialValue: false,
     onToggle: onOpen,
   });
 

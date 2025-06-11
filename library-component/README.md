@@ -18,3 +18,10 @@ npm create vite@latest
 cd library-component
 npm install
 npm run dev
+
+
+
+MORE: 
+npm install classnames
+npm install react-router-dom
+
