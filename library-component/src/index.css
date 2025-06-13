@@ -18,7 +18,7 @@ nav {
 }
 
 header {
-  background-color: #7f8caa;
+  background-color: #626f47;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,13 +27,13 @@ header {
   margin-bottom: 10px;
   height: 110px;
   width: 100%;
-  border: 1px solid gray;
+  border: 1px solid #636b53;
   border-radius: 6px;
 }
 
 header a {
   text-decoration: none;
-  color: #383838;
+  color: #030303;
   font-weight: 600;
   padding: 8px;
 }
@@ -79,10 +79,11 @@ body {
   margin: 0;
   padding: 0;
   background-color: #e9e3ff;
+  height: 100%;
 }
 
-.container {
-  height: 100vh;
+p {
+  font-size: large;
 }
 
 main {
@@ -125,6 +126,7 @@ button.button-sm {
 
 button.button-lg {
   padding: 13px 25px;
+  color: black;
 }
 
 .green {
@@ -195,7 +197,9 @@ button:focus-visible {
 }
 
 .menu-button {
-  background-color: white;
+  background-color: #a4b465;
+  border-radius: 6px;
+  border: 1px solid gray;
 }
 
 .menu-dropdown {
@@ -205,11 +209,11 @@ button:focus-visible {
   background-color: white;
   border: 1px solid gray;
   border-radius: 6px;
-  background-color: white;
+  background-color: #c2cc9a;
 }
 
 .menu-item {
-  color: #4b5563;
+  color: #000000;
   padding: 0.75rem;
   cursor: pointer;
   min-width: 100px;
@@ -250,10 +254,13 @@ button:focus-visible {
   text-align: center;
   padding: 20px;
   transition: color 0.3s;
-  flex: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-color: #f5ecd5;
+  border-radius: 6px;
+  width: 100%;
+  flex: 1;
 }
 
 .page-content {
@@ -284,6 +291,7 @@ button:focus-visible {
   margin-bottom: 20px;
   margin-left: auto;
   gap: 10px;
+  color: #93c7b6;
 }
 
 /* Accessibility Styles */

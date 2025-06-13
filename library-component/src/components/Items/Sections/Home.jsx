@@ -37,6 +37,11 @@ export default function Home() {
                 Testimonials
               </Link>
             </Menu.Item>
+               <Menu.Item>
+              <Link className="link-button" to="/tooltips">
+                Tooltips
+              </Link>
+            </Menu.Item>
           </Menu.Dropdown>
         </Menu>
       </div>
