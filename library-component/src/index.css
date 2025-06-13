@@ -12,19 +12,20 @@ a:hover {
 }
 
 nav {
-  all: unset;
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
 }
 
 header {
   background-color: #7f8caa;
-  height: 110px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-inline: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
   margin-bottom: 10px;
+  height: 110px;
   width: 100%;
   border: 1px solid gray;
   border-radius: 6px;
@@ -156,7 +157,7 @@ button.button-danger {
   padding: 0.75rem 1.375rem;
   color: initial;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
 }
@@ -166,7 +167,7 @@ button.button-danger {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 6px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
   font-size: 1em;
@@ -281,6 +282,8 @@ button:focus-visible {
   cursor: pointer;
   padding: 10px;
   margin-bottom: 20px;
+  margin-left: auto;
+  gap: 10px;
 }
 
 /* Accessibility Styles */
