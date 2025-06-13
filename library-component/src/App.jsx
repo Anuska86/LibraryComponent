@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Items/Sections/Home";
 import BadgesSection from "../src/components/Items/Sections/BadgesSection";
 import BannersSection from "./components/Items/Sections/BannersSection";
+import CardsSection from "./components/Items/Sections/CardsSection";
 
 function App() {
   const { theme } = React.useContext(ThemeContext);
@@ -24,6 +25,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/badges" element={<BadgesSection />} />
               <Route path="/banners" element={<BannersSection />} />
+              <Route path="/cards" element={<CardsSection />} />
             </Routes>
             <Menu onOpen={() => console.log("Menu opened/closed")}>
               <Menu.Button>Menu</Menu.Button>
@@ -39,7 +41,11 @@ function App() {
                     Banners
                   </Link>
                 </Menu.Item>
-                <Menu.Item>Cards</Menu.Item>
+                <Menu.Item>
+                  <Link className="link-button" to="/cards">
+                    Cards
+                  </Link>
+                </Menu.Item>
                 <Menu.Item>Testimonials</Menu.Item>
               </Menu.Dropdown>
             </Menu>
