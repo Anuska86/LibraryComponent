@@ -1,7 +1,7 @@
 import React from "react";
-import Badge from "../Badge";
+import Badge from "../Badges";
 
-export default function Badges() {
+export default function BadgesSection() {
   return (
     <div>
       <h1>Badges Section</h1>
