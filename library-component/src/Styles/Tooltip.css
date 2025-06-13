@@ -27,4 +27,6 @@
   margin: 16px;
 }
 
-.target{margin-bottom: 30px;}
+.target {
+  margin-bottom: 2em;
+}
