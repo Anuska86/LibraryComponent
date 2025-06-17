@@ -26,6 +26,20 @@
   color: white;
 }
 
+.toast-button {
+  background-color: #636b53;
+  border: 1px solid transparent;
+  color: whitesmoke;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 0.6em 1.2em;
+  border-radius: 6px;
+  transition: border-color 0.25s;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 .toast-close-btn {
   background: none;
   border: none;
@@ -63,4 +77,36 @@
   left: 10px;
   right: auto;
   align-items: flex-start;
+}
+
+/* Toasts in dark mode */
+.dark .toast,
+body.dark .toast {
+  background-color: #23272f;
+  color: #f1f1f1;
+}
+
+.dark .toast.success,
+body.dark .toast.success {
+  background-color: #357a38;
+}
+
+.dark .toast.info,
+body.dark .toast.info {
+  background-color: #1769aa;
+}
+
+.dark .toast.error,
+body.dark .toast.error {
+  background-color: #b71c1c;
+}
+
+.dark .toast.warning,
+body.dark .toast.warning {
+  background-color: #b26a00;
+}
+
+.dark .toast-close-btn,
+body.dark .toast-close-btn {
+  color: #f1f1f1;
 }

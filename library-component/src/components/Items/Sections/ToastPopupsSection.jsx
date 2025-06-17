@@ -39,15 +39,34 @@ export default function ToastPopupsSection() {
           ))}
         </select>
       </div>
-      <Button onClick={() => addToast("Success toast!", "success")}>
+      <Button
+        className="toast-button"
+        onClick={() => addToast("Success toast!", "success")}
+      >
         Success
       </Button>
-      <Button onClick={() => addToast("Info toast!", "info")}>Info</Button>
-      <Button onClick={() => addToast("Warning toast!", "warning")}>
+      <Button
+        className="toast-button"
+        onClick={() => addToast("Info toast!", "info")}
+      >
+        Info
+      </Button>
+      <Button
+        className="toast-button"
+        onClick={() => addToast("Warning toast!", "warning")}
+      >
         Warning
       </Button>
-      <Button onClick={() => addToast("Error toast!", "error")}>Error</Button>
-      <Button onClick={() => addToast("Manual close only", "info", false)}>
+      <Button
+        className="toast-button"
+        onClick={() => addToast("Error toast!", "error")}
+      >
+        Error
+      </Button>
+      <Button
+        className="toast-button"
+        onClick={() => addToast("Manual close only", "info", false)}
+      >
         Manual Close
       </Button>
       <div className={`toast-container ${position}`}>
