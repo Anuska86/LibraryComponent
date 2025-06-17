@@ -1,6 +1,6 @@
 import React from "react";
 import { BsCardImage } from "react-icons/bs";
-import "../../Styles/Card.css";
+import "../../Styles/Card.css"
 
 export default function Card({ title, content, showIcon = false, footer }) {
   return (

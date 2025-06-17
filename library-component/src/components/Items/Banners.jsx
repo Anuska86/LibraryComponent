@@ -4,7 +4,7 @@ import "../../Styles/Banner.css";
 export default function Banner({ message, type = "info" }) {
   return (
     <div className={`banner banner-${type}`}>
-      <p>{message}</p>
+      <p className="banner-message">{message}</p>
     </div>
   );
 }
