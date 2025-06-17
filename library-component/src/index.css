@@ -101,20 +101,23 @@ main {
 
 /*Button section */
 
+/* Consolidated general button styles */
 button {
-  background-color: #e5e7eb;
-  color: #4b5563;
-  border: 1px solid #6b7280;
-  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
-  cursor: pointer;
-  font-weight: 700;
-  padding: 9px 17px;
-  border-radius: 6px;
-  line-height: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 6px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  background-color: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s, background 0.2s, color 0.2s;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  line-height: 24px;
 }
 
 button > svg {
@@ -132,10 +135,6 @@ button.button-sm {
 button.button-lg {
   padding: 13px 25px;
   color: black;
-}
-
-.green {
-  color: green;
 }
 
 button.button-success {
@@ -156,6 +155,15 @@ button.button-danger {
   border-color: #f87171;
 }
 
+button:hover {
+  border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
 .link-button {
   display: inline-block;
   text-align: center;
@@ -173,23 +181,8 @@ button.button-danger {
   transform: translate(1px, 1px);
 }
 
-button {
-  border-radius: 6px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+.green {
+  color: green;
 }
 
 /*Menu section*/
@@ -743,21 +736,7 @@ header {
    Button Styles
    ========================= */
 
-button {
-  background-color: var(--clr-primary-a40);
-  color: var(--clr-dark-a0);
-  border: 1px solid var(--clr-primary-a20);
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-
-button:hover {
-  background-color: var(--clr-primary-a20);
-}
-
+/* Use variant classes for color theming, not the base button */
 .dark button {
   background-color: var(--clr-primary-a0);
   color: var(--clr-light-a0);
