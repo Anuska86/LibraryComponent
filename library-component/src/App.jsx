@@ -8,6 +8,7 @@ import BannersSection from "./components/Items/Sections/BannersSection";
 import CardsSection from "./components/Items/Sections/CardsSection";
 import TestimonialsSection from "./components/Items/Sections/TestimonialsSection";
 import TooltipsSection from "./components/Items/Sections/TooltipsSection";
+import ToastPopupsSection from "./components/Items/Sections/ToastPopupsSection";
 
 function App() {
   const { theme } = React.useContext(ThemeContext);
@@ -29,6 +30,7 @@ function App() {
               <Route path="/cards" element={<CardsSection />} />
               <Route path="/testimonials" element={<TestimonialsSection />} />
               <Route path="/tooltips" element={<TooltipsSection />} />
+              <Route path="/toast-popups" element={<ToastPopupsSection />} />
             </Routes>
           </div>
           <ThemeButton></ThemeButton>
