@@ -1,7 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 import { ThemeContext } from "./ThemeButton";
-
+import "./Button.css";
 export default function Button({
   children,
   size,
@@ -18,7 +18,6 @@ export default function Button({
   let themeCLass = theme === "dark" ? "button-dark" : "button-light";
 
   const allClasses = classnames(sizeClass, className, variantClass, themeCLass);
-  
 
   return (
     <button className={allClasses} {...restProps}>

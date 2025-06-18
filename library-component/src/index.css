@@ -25,7 +25,7 @@
   --clr-surface-tonal-a50: #475569;
 }
 
-/* Dark mode overrides */
+/* Dark mode */
 .dark {
   --clr-dark-a0: #000000;
   --clr-light-a0: #ffffff;
@@ -52,8 +52,21 @@
   --clr-surface-tonal-a50: #949ca4;
 }
 
+/* Base styles */
+
 * {
   box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+.dark #root {
+  background: var(--clr-surface-a20);
 }
 
 html,
@@ -73,16 +86,24 @@ body {
   color: var(--clr-light-a0);
 }
 
-#root {
+main {
+  width: 100%;
   display: flex;
+  flex: 1 1 auto;
   flex-direction: column;
-  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.theme-provider {
   height: 100%;
 }
 
-.dark #root {
-  background: var(--clr-surface-a20);
+.dark p {
+  color: var(--clr-light-a0);
 }
+
+/* Navegation styles */
 
 a {
   color: var(--clr-primary-a0);
@@ -105,6 +126,8 @@ nav {
   display: flex;
   gap: 10px;
 }
+
+/* Header styles */
 
 header {
   background: var(--clr-primary-a40);
@@ -140,19 +163,6 @@ header a:hover {
   color: #535bf2;
 }
 
-main {
-  width: 100%;
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.theme-provider{
-  height: 100%;
-}
-
 /*Button section */
 
 button {
@@ -173,40 +183,7 @@ button {
   line-height: 24px;
 }
 
-button > svg {
-  margin-right: 5px;
-  color: rgb(69, 168, 69);
-  height: 20px;
-  width: 20px;
-}
-
-button.button-sm {
-  padding: 7px 11px;
-  font-size: 12px;
-}
-
-button.button-lg {
-  padding: 13px 25px;
-  color: black;
-}
-
-button.button-success {
-  color: #047857;
-  background-color: #ecfdf5;
-  border-color: #047857;
-}
-
-button.button-warning {
-  color: #fbbf24;
-  background-color: #fffbeb;
-  border-color: #fbbf24;
-}
-
-button.button-danger {
-  color: #f87171;
-  background-color: #fef2f2;
-  border-color: #f87171;
-}
+/* Hover styles*/
 
 button:hover {
   border-color: #646cff;
@@ -216,6 +193,8 @@ button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+/* Link button styles */
 
 .link-button {
   display: inline-block;
@@ -236,46 +215,7 @@ button:focus-visible {
   transform: translate(1px, 1px);
 }
 
-.green {
-  color: var(--clr-primary-a20);
-}
-
-/* HOME */
-
-.home-container {
-  padding-top: 20px;
-  text-align: center;
-}
-
-.app-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: flex-start;
-  transition: background-color 0.3s, color 0.3s;
-  padding: 40px 20px;
-  margin: 0 auto;
-  height: 100%;
-  width: 100%;
-  box-sizing: border-box;
-  flex: 1;
-}
-
-.page-content {
-  flex: 1 1 auto;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
-  width: 100%;
-  padding-inline: 20px;
-  box-sizing: border-box;
-  margin-left: 0;
-  margin-right: 0;
-  background: var(--clr-surface-a0);
-  color: var(--clr-dark-a0);
-  border-radius: 8px;
-}
+/*Theme button */
 
 .theme-button {
   display: inline-block;
@@ -342,13 +282,48 @@ body.dark button {
   border-color: #006a67;
 }
 
-.dark a {
-  color: #fff4b7;
-  text-decoration: none;
+/* Button variant classes  */
+.green {
+  color: var(--clr-primary-a20);
 }
 
-.dark p {
-  color: var(--clr-light-a0);
+/* HOME */
+
+.home-container {
+  padding-top: 20px;
+  text-align: center;
+}
+
+/*Page Content */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+  transition: background-color 0.3s, color 0.3s;
+  padding: 40px 20px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.page-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+  width: 100%;
+  padding-inline: 20px;
+  box-sizing: border-box;
+  margin-left: 0;
+  margin-right: 0;
+  background: var(--clr-surface-a0);
+  color: var(--clr-dark-a0);
+  border-radius: 8px;
 }
 
 /* =========================
@@ -519,6 +494,7 @@ body.dark button {
   background-color: var(--clr-surface-a20);
   color: var(--clr-dark-a0);
   border-radius: 8px;
+  width: 100%;
 }
 
 .dark .content {

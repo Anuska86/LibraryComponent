@@ -13,6 +13,10 @@ import ToastPopupsSection from "./components/Items/Sections/ToastPopupsSection";
 function App() {
   const { theme } = React.useContext(ThemeContext);
 
+  React.useEffect(() => {
+    document.body.classList.toggle("dark", theme==="dark");
+  }, [theme]);
+
   return (
     <BrowserRouter>
       <main className={`app-container ${theme}`}>
