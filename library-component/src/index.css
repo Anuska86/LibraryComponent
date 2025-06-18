@@ -3,18 +3,45 @@
 }
 
 html,
-body,
+body {
+  background-color: var(--clr-light-a0);
+  color: var(--clr-dark-a0);
+  font-family: "Segoe UI", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  transition: background 0.3s, color 0.3s;
+}
+
+.dark body {
+  background: var(--clr-surface-a0);
+  color: var(--clr-light-a0);
+}
+
 #root {
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.dark #root {
+  background: var(--clr-surface-a20);
 }
 
 a {
-  font-weight: 500;
-  color: #2e37e2;
-  text-decoration: inherit;
+  color: var(--clr-primary-a0);
+  text-decoration: none;
+  transition: color 0.2s;
 }
 a:hover {
-  color: #535bf2;
+  color: var(--clr-primary-a20);
+}
+
+.dark a {
+  color: var(--clr-primary-a40);
+}
+.dark a:hover {
+  color: var(--clr-primary-a10);
 }
 
 nav {
@@ -24,6 +51,8 @@ nav {
 }
 
 header {
+  background: var(--clr-primary-a40);
+  color: var(--clr-light-a0);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -32,8 +61,10 @@ header {
   margin-bottom: 10px;
   height: 110px;
   width: 100%;
+  border: 1px solid var(--clr-primary-a20);
   border-radius: 6px;
   box-sizing: border-box;
+  flex: 0 0 auto;
 }
 
 header a {
@@ -45,34 +76,23 @@ header a {
 
 header a:hover {
   color: #535bf2;
-  text-decoration: underline;
-}
-
-.title {
-  text-align: center;
-  font-size: 30px;
-  font-weight: 300;
-  color: #222;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  display: block;
-  grid-template-columns: 1fr max-content 1fr;
-  grid-template-rows: 27px 0;
-  grid-gap: 20px;
-  align-items: center;
+  .title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--clr-dark-a0);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: block;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+    margin-bottom: 70px;
+    margin-top: 40px;
+  }
   margin-bottom: 70px;
   margin-top: 40px;
-}
-
-.title:after,
-.title:before {
-  content: " ";
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid #c50000;
-  border-top: 1px solid #c50000;
-  height: 5px;
-  background-color: #f5ecd5;
 }
 
 .introduction {
@@ -80,21 +100,11 @@ header a:hover {
   align-items: center;
 }
 
-body {
-  margin: 0;
-  padding: 0;
-  background-color: var(--clr-light-a0);
-  color: var(--clr-dark-a0);
-}
-p {
-  font-size: large;
-  color: var(--clr-dark-a0);
-}
-
 main {
-  height: 100vh;
-  width: 100vw;
-  display: block;
+  width: 100%;
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -167,14 +177,16 @@ button:focus-visible {
 .link-button {
   display: inline-block;
   text-align: center;
-  text-decoration: none;
+  text-decoration: underline;
   border: none;
   padding: 0.75rem 1.375rem;
-  color: initial;
+  color: var(--clr-primary-a0);
   font-weight: 700;
   border-radius: 6px;
   cursor: pointer;
   transition: transform 0.1s ease-in-out;
+  background: none;
+  font-size: 1rem;
 }
 
 .link-button:hover {
@@ -238,31 +250,6 @@ button:focus-visible {
 /* Dark and Light Theme Styles */
 
 /* Light mode (default) */
-:root {
-  --clr-dark-a0: #000000;
-  --clr-light-a0: #ffffff;
-
-  --clr-primary-a0: #006b68;
-  --clr-primary-a10: #307b77;
-  --clr-primary-a20: #4d8b87;
-  --clr-primary-a30: #679b97;
-  --clr-primary-a40: #80aba8;
-  --clr-primary-a50: #99bbb9;
-
-  --clr-surface-a0: #f8f8f8;
-  --clr-surface-a10: #e6e6e6;
-  --clr-surface-a20: #cccccc;
-  --clr-surface-a30: #b3b3b3;
-  --clr-surface-a40: #999999;
-  --clr-surface-a50: #808080;
-
-  --clr-surface-tonal-a0: #f0f4f8;
-  --clr-surface-tonal-a10: #e2e8f0;
-  --clr-surface-tonal-a20: #cbd5e1;
-  --clr-surface-tonal-a30: #94a3b8;
-  --clr-surface-tonal-a40: #64748b;
-  --clr-surface-tonal-a50: #475569;
-}
 
 /* Dark mode overrides */
 .dark {
@@ -291,49 +278,33 @@ button:focus-visible {
   --clr-surface-tonal-a50: #949ca4;
 }
 
-html,
-body,
-#root {
-  height: 100%;
-  background: var(--clr-surface-a0);
-  color: var(--clr-dark-a0);
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
+/* (Consolidated into the first selector, so this block is removed) */
 
 .app-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: space-between;
-  min-height: 100vh;
+  justify-content: flex-start;
   transition: background-color 0.3s, color 0.3s;
   padding: 40px 20px;
   margin: 0 auto;
   width: 100%;
   box-sizing: border-box;
-}
-
-.content {
-  text-align: center;
-  transition: color 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  border-radius: 6px;
-  width: 100%;
-  flex: 1;
+  flex: 1 1 auto;
 }
 
 .page-content {
-  flex-grow: 1;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   padding-inline: 20px;
   box-sizing: border-box;
   margin-left: 0;
   margin-right: 0;
+  background: var(--clr-surface-a0);
+  color: var(--clr-dark-a0);
 }
 
 .theme-button {
@@ -351,7 +322,8 @@ body,
   color: #93c7b6;
 }
 
-.light {
+/* Button variant classes for light and dark buttons */
+.button-light {
   border: 1px solid #0c4a6e;
   border-color: #006a67;
   background-color: #eee9db;
@@ -360,7 +332,22 @@ body,
   border-radius: 6px;
 }
 
-.dark {
+.button-dark {
+  color: #f0f9ff;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.button-light {
+  border: 1px solid #0c4a6e;
+  border-color: #006a67;
+  background-color: #eee9db;
+  color: #0c4a6e;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+}
+
+.button-dark {
   color: #f0f9ff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
@@ -370,12 +357,7 @@ body,
 body.dark button {
   background-color: #000b58;
   color: #fff4b7;
-  border-color: #006a67;
-}
-
-.dark button.button-success {
-  color: #bbf7d0;
-  background-color: #166534;
+  /* Removed duplicate .dark button definition for clarity */
   border-color: #006a67;
 }
 
@@ -477,65 +459,10 @@ body.dark button {
 }
 
 /* =========================
-   Base Styles
-   ========================= */
-
-html,
-body,
-#root {
-  height: 100%;
-  background: var(--clr-surface-a0);
-  color: var(--clr-dark-a0);
-  font-family: "Segoe UI", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background: var(--clr-surface-a0);
-  color: var(--clr-dark-a0);
-  transition: background 0.3s, color 0.3s;
-}
-
-.dark body {
-  background: var(--clr-surface-a0);
-  color: var(--clr-light-a0);
-}
-
-a {
-  color: var(--clr-primary-a0);
-  text-decoration: none;
-  transition: color 0.2s;
-}
-a:hover {
-  color: var(--clr-primary-a20);
-}
-
-.dark a {
-  color: var(--clr-primary-a40);
-}
-.dark a:hover {
-  color: var(--clr-primary-a10);
-}
-
-/* =========================
    Header & Navigation
    ========================= */
 
-header {
-  background: var(--clr-primary-a40);
-  color: var(--clr-light-a0);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-inline: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
-  height: 110px;
-  width: 100%;
-  border: 1px solid var(--clr-primary-a20);
-  border-radius: 6px;
-}
+/* header styles consolidated above */
 
 .dark header {
   background: var(--clr-surface-a10);
@@ -543,9 +470,6 @@ header {
   border-color: var(--clr-primary-a0);
 }
 
-.dark #root {
-  background: var(--clr-surface-a20);
-}
 /* =========================
    Titles
    ========================= */
@@ -560,21 +484,7 @@ header {
   display: block;
   grid-template-columns: 1fr max-content 1fr;
   grid-template-rows: 27px 0;
-  grid-gap: 20px;
-  align-items: center;
-  margin-bottom: 70px;
-  margin-top: 40px;
-}
-
-.title:after,
-.title:before {
-  content: " ";
-  display: block;
-  width: 100%;
-  border-bottom: 1px solid var(--clr-primary-a0);
-  border-top: 1px solid var(--clr-primary-a0);
-  height: 5px;
-  background-color: var(--clr-surface-a0);
+  /* .title styles consolidated above; duplicate removed */
 }
 
 .dark .title {
@@ -639,16 +549,6 @@ header {
 }
 
 /* Link Button */
-.link-button {
-  background: none;
-  border: none;
-  color: var(--clr-primary-a0);
-  text-decoration: underline;
-  cursor: pointer;
-  font-size: 1rem;
-  padding: 0;
-}
-
 .dark .link-button {
   color: var(--clr-light-a0);
 }
