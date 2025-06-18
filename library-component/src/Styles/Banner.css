@@ -1,27 +1,79 @@
+/* =========================
+   Base Styles
+   ========================= */
+
+.page-content {
+  background-color: var(--clr-surface-a20);
+  color: var(--clr-dark-a0);
+  border-radius: 8px;
+}
+
+.title {
+  color: var(--clr-dark-a0);
+  background-color: var(--clr-surface-a20);
+}
+
+.title:after,
+.title:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  border-bottom: 1px solid var(--clr-primary-a0);
+  border-top: 1px solid var(--clr-primary-a0);
+  height: 5px;
+  background-color: var(--clr-surface-a20);
+}
+
+.dark .title {
+  color: var(--clr-light-a0);
+}
+.dark .title:after,
+.dark .title:before {
+  border-bottom: 1px solid var(--clr-primary-a40);
+  border-top: 1px solid var(--clr-primary-a40);
+  background-color: var(--clr-surface-a20);
+}
+
+.dark div#root {
+  background: var(--clr-surface-a20);
+}
+
+/* =========================
+   Banner Styles
+   ========================= */
+
 .banner {
   padding: 1rem;
   margin: 1rem 0;
   border-radius: 4px;
-  color: rgb(36, 32, 32);
   font-weight: bold;
 }
 
 .banner-info {
-  background-color: #2196f3;
+  background-color: var(--clr-primary-a20);
+  color: var(--clr-light-a0);
 }
 
 .banner-success {
   background-color: #4caf50;
+  color: var(--clr-light-a0);
 }
 
 .banner-warning {
   background-color: #ff9800;
+  color: var(--clr-light-a0);
 }
 
 .banner-danger {
   background-color: #f44336;
+  color: var(--clr-light-a0);
 }
 
 .banner-message {
   color: whitesmoke;
+}
+
+.dark .banner-info {
+  background-color: var(--clr-primary-a0);
+  color: var(--clr-light-a0);
 }

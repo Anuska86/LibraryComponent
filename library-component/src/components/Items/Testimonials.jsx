@@ -16,7 +16,7 @@ const testimonials = [
     id: 2,
     name: "John Smith",
     title: "Developer, BetaTech",
-    image: <RxAvatar size={60} />,
+    image: <RxAvatar size={60} color="var(--clr-primary-a0)" />,
     text: "Fantastic support and intuitive design. I love it!",
     style: "avatar",
   },

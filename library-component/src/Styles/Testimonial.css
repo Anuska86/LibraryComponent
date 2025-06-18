@@ -29,7 +29,6 @@
 }
 
 .testimonial-card.full {
-  background: transparent;
   padding: 0;
   border-radius: 12px;
   padding: 1.5rem;
@@ -77,4 +76,15 @@
 .testimonial-title {
   color: #777;
   font-size: 0.9rem;
+}
+
+.testimonial-text {
+  color: #222;
+  font-size: 1rem;
+  margin: 0;
+  word-break: break-word;
+}
+
+.dark p {
+  color: var(--clr-surface-a20);
 }
