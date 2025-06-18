@@ -37,7 +37,9 @@ function App() {
               <Route path="/toast-popups" element={<ToastPopupsSection />} />
             </Routes>
           </div>
-          <ThemeButton></ThemeButton>
+          <footer>
+            <ThemeButton />
+          </footer>
         </div>
       </main>
     </BrowserRouter>
