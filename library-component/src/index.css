@@ -88,7 +88,7 @@ body {
 }
 p {
   font-size: large;
-  color: var(--clr-light-a0);
+  color: var(--clr-dark-a0);
 }
 
 main {
@@ -182,7 +182,7 @@ button:focus-visible {
 }
 
 .green {
-  color: green;
+  color: var(--clr-primary-a20);
 }
 
 /*Menu section*/
@@ -195,19 +195,18 @@ button:focus-visible {
 }
 
 .menu-button {
-  background-color: #a4b465;
+  background-color: var(--clr-primary-a20);
   border-radius: 6px;
-  border: 1px solid gray;
+  border: 1px solid var(--clr-primary-a20);
 }
 
 .menu-dropdown {
   position: absolute;
   left: 0;
   margin-top: 3px;
-  background-color: white;
-  border: 1px solid gray;
+  border: 1px solid var(--clr-primary-a20);
   border-radius: 6px;
-  background-color: #c2cc9a;
+  background-color: var(--clr-primary-a40);
 }
 
 .menu-item {
@@ -397,17 +396,6 @@ body.dark button {
   text-decoration: none;
 }
 
-.dark .link-button,
-body.dark .link-button {
-  background-color: var(--clr-surface-a0);
-  color: var(--clr-light-a0);
-}
-
-.dark header {
-  color: #fff4b7;
-  border-color: #006a67;
-  background-color: #1e293b;
-}
 .dark .title {
   color: #fff4b7;
 }
@@ -434,11 +422,11 @@ body.dark .link-button {
 
 .dark .content {
   background-color: #1e293b;
-  color: #fff4b7;
+  color: var(--clr-light-a0);
 }
 
 .dark p {
-  color: #fff4b7;
+  color: var(--clr-light-a0);
 }
 .dark .menu-dropdown {
   background-color: #000b58;
@@ -556,7 +544,7 @@ a:hover {
   color: var(--clr-primary-a40);
 }
 .dark a:hover {
-  color: var(--clr-primary-a20);
+  color: var(--clr-primary-a10);
 }
 
 /* =========================
@@ -584,6 +572,9 @@ header {
   border-color: var(--clr-primary-a0);
 }
 
+.dark div#root {
+  background: var(--clr-surface-a20);
+}
 /* =========================
    Titles
    ========================= */
@@ -626,77 +617,39 @@ header {
 }
 
 /* =========================
-   Card Styles
+      Footer Styles
    ========================= */
 
-.card {
-  border: 1px solid var(--clr-surface-a20);
-  border-radius: 6px;
-  overflow: hidden;
-  width: 250px;
-  min-height: 200px;
-  margin: 1rem;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  background-color: var(--clr-surface-a10);
-  display: flex;
-  flex-direction: column;
-}
-
-.dark .card {
-  background-color: var(--clr-surface-a20);
-  border-color: var(--clr-surface-a40);
-}
-
-.card-body {
-  padding: 8px 12px;
-  margin: 12px;
-  background-color: var(--clr-surface-tonal-a10);
-  border-radius: 6px;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.dark .card-body {
-  background-color: var(--clr-surface-tonal-a20);
-}
-
-.card-title {
-  margin: 0 0 0.5rem;
-  color: var(--clr-primary-a0);
-}
-
-.dark .card-title {
-  color: var(--clr-primary-a50);
-}
-
-.card-content {
-  font-size: 0.9rem;
-  color: var(--clr-dark-a0);
-}
-
-.dark .card-content {
+.footer {
   color: var(--clr-light-a0);
 }
 
-.card-footer {
-  padding: 0.75rem 1rem;
-  background-color: var(--clr-primary-a0);
-  font-size: 0.85rem;
+.dark .footer {
+  background: var(--clr-surface-a10);
+  color: var(--clr-light-a0);
+  border-color: var(--clr-primary-a0);
+}
+
+/* =========================
+   Menu Styles
+   ========================= */
+
+.dark .menu-dropdown {
+  background-color: var(--clr-primary-a20);
+  color: var(--clr-surface-a10);
+  border-color: var(--clr-surface-a10);
+}
+
+.dark .menu-item {
   color: var(--clr-light-a0);
 }
 
-.dark .card-footer {
-  background-color: var(--clr-primary-a10);
-  color: var(--clr-light-a0);
+.dark .menu-item:hover {
+  background-color: var(--clr-primary-a20);
 }
 
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 16px;
+.dark .menu-item:not(:last-child) {
+  border-bottom: 1px solid var(--clr-primary-a0);
 }
 
 /* =========================
@@ -759,7 +712,7 @@ header {
 }
 
 .dark .link-button {
-  color: var(--clr-primary-a50);
+  color: var(--clr-light-a0);
 }
 
 /* =========================
@@ -852,6 +805,6 @@ body.dark .toast {
 }
 
 .dark .page-content {
-  background: var(--clr-surface-a10);
+  background: var(--clr-surface-a20);
   color: var(--clr-light-a0);
 }
