@@ -14,7 +14,7 @@ function App() {
   const { theme } = React.useContext(ThemeContext);
 
   React.useEffect(() => {
-    document.body.classList.toggle("dark", theme==="dark");
+    document.body.classList.toggle("dark", theme === "dark");
   }, [theme]);
 
   return (
