@@ -37,10 +37,11 @@ function App() {
               <Route path="/toast-popups" element={<ToastPopupsSection />} />
             </Routes>
           </div>
-          <footer>
-            <ThemeButton />
-          </footer>
         </div>
+        <footer className="footer">
+          <p>© 2025 Anuska's Library. All rights reserved.</p>
+          <ThemeButton />
+        </footer>
       </main>
     </BrowserRouter>
   );

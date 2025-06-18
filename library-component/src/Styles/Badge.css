@@ -1,11 +1,77 @@
+section badges-section {
+  align-items: center;
+}
+
+h2 {
+  color: var(--clr-primary-a20);
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/*Badge*/
+
 .badge {
   display: inline-block;
-  padding: 5px 10px;
-  font-size: 14px;
+  padding: 10px 20px;
+  font-size: 20px;
   font-weight: bold;
   border-radius: 12px;
   text-align: center;
 }
+
+.badge-pill {
+  border-radius: 999px;
+}
+
+.badge-square {
+  border-radius: 4px;
+}
+
+.badge-circle {
+  border-radius: 50%;
+  height: 5rem;
+  width: 5rem;
+  padding: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.badge-rectangle {
+  width: 100px;
+  height: 55px;
+  position: relative;
+  display: inline-block;
+}
+
+.badge-triangle {
+  width: 0;
+  height: 0;
+  border-left: 70px solid transparent;
+  border-right: 70px solid transparent;
+  border-bottom: 100px solid #ffc107;
+  display: inline-block;
+}
+
+.badge-octagon {
+  width: 100px;
+  height: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  clip-path: polygon(
+    30% 0%,
+    70% 0%,
+    100% 30%,
+    100% 70%,
+    70% 100%,
+    30% 100%,
+    0% 70%,
+    0% 30%
+  );
+}
+
+/*Badge Colors*/
 
 .badge-primary {
   background-color: #007bff;

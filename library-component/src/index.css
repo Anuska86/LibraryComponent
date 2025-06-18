@@ -141,7 +141,6 @@ header {
   align-items: center;
   padding-inline: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin-bottom: 10px;
   height: 110px;
   width: 100%;
   border: 1px solid var(--clr-primary-a20);
@@ -158,7 +157,7 @@ header {
 
 header a {
   text-decoration: none;
-  color: #030303;
+  color: #eee9db;
   font-weight: 600;
   padding: 8px;
 }
@@ -241,10 +240,9 @@ button:focus-visible {
 
 /* Button variant classes for light and dark buttons */
 .button-light {
-  border: 1px solid #0c4a6e;
-  border-color: #006a67;
+  border: 1px solid #006a67;
   background-color: #eee9db;
-  color: #0c4a6e;
+  color: #006a67;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 6px;
 }
@@ -326,6 +324,8 @@ body.dark button {
   color: var(--clr-dark-a0);
   border-radius: 8px;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .dark .content {
   background: var(--clr-surface-a20);
@@ -410,6 +410,12 @@ body.dark button {
 
 .footer {
   color: var(--clr-light-a0);
+  background-color: var(--clr-primary-a40);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 75px;
+  width: 100%;
+  border: 1px solid var(--clr-primary-a20);
+  border-radius: 6px;
 }
 
 .dark .footer {
