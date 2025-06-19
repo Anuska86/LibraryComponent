@@ -1,3 +1,18 @@
+/*Base styles*/
+.toast-popups-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: var(--clr-surface-a20);
+  color: var(--clr-dark-a0);
+}
+.page-content {
+  align-items: center;
+}
+
+/*Toast styles*/
+
 .toast {
   padding: 10px 16px;
   border-radius: 5px;
@@ -11,42 +26,15 @@
   background-color: var(--clr-primary-a20);
   color: var(--clr-light-a0);
 }
-.toast.success {
-  background-color: #4caf50;
-  color: white;
-}
-.toast.info {
-   background-color: var(--clr-primary-a20);
-}
-.toast.error {
-  background-color: #f44336;
-  color: white;
-}
-.toast.warning {
-  background-color: #ff9800;
-  color: white;
-}
 
 .dark .toast,
 body.dark .toast {
   background-color: var(--clr-surface-a20);
   color: var(--clr-light-a0);
 }
-.dark .toast.success {
-  background-color: #357a38;
-}
-.dark .toast.info {
-  background-color: var(--clr-primary-a0);
-}
-.dark .toast.error {
-  background-color: #b71c1c;
-}
-.dark .toast.warning {
-  background-color: #b26a00;
-}
 
 .toast-button {
-  background-color: #636b53;
+  background-color: var(--clr-primary-a40);
   border: 1px solid transparent;
   color: whitesmoke;
   font-size: 1em;
@@ -57,6 +45,10 @@ body.dark .toast {
   transition: border-color 0.25s;
   margin: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.dark .toast-button {
+  border: 1px solid var(--clr-primary-a20);
 }
 
 .toast-close-btn {
@@ -71,7 +63,6 @@ body.dark .toast {
 .dark .toast-close-btn {
   color: var(--clr-light-a0);
 }
-
 
 .toast-container {
   position: fixed;
@@ -103,34 +94,47 @@ body.dark .toast {
   align-items: flex-start;
 }
 
-/* Toasts in dark mode */
-.dark .toast,
-body.dark .toast {
-  background-color: #23272f;
-  color: #f1f1f1;
+/*Toast types*/
+
+.toast.success {
+  background-color: #4caf50;
+  color: white;
 }
 
-.dark .toast.success,
-body.dark .toast.success {
+.dark .toast.success {
   background-color: #357a38;
 }
 
-.dark .toast.info,
-body.dark .toast.info {
-  background-color: #1769aa;
+.toast.info {
+  background-color: #629fd1;
 }
 
-.dark .toast.error,
-body.dark .toast.error {
+.dark .toast.info {
+  background-color: #629fd1;
+}
+
+.toast.error {
+  background-color: #f44336;
+  color: white;
+}
+
+.dark .toast.error {
   background-color: #b71c1c;
 }
+.toast.warning {
+  background-color: #ff9800;
+  color: white;
+}
 
-.dark .toast.warning,
-body.dark .toast.warning {
+.dark .toast.warning {
   background-color: #b26a00;
 }
 
-.dark .toast-close-btn,
-body.dark .toast-close-btn {
-  color: #f1f1f1;
+.toast.manual {
+  background-color: #b3b3b3;
+  color: white;
+}
+
+.dark .toast.manual {
+  background-color: #b3b3b3;
 }

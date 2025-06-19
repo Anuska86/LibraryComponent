@@ -31,6 +31,10 @@
   background: transparent;
 }
 
+.dark .tooltip-target {
+  color: var(--clr-light-a0);
+}
+
 /*Tooltip*/
 
 .custom-tooltip-box {
