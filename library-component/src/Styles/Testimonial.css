@@ -71,6 +71,7 @@
 .testimonial-name {
   font-weight: bold;
   margin: 0.5rem 0 0;
+  color: var(--clr-primary-a40);
 }
 
 .testimonial-title {
@@ -86,5 +87,5 @@
 }
 
 .dark p {
-  color: var(--clr-light-a0);
+  color: var(--clr-surface-a20);
 }
