@@ -4,7 +4,7 @@ import Testimonial from "../Testimonials";
 export default function TestimonialsSection() {
   return (
     <div>
-      <h1>Testimonials Section</h1>
+      <h1 className="title">Testimonials Section</h1>
       <Testimonial />
     </div>
   );

@@ -72,20 +72,28 @@
   font-weight: bold;
   margin: 0.5rem 0 0;
   color: var(--clr-primary-a40);
+
+  .dark .testimonial-name {
+    color: var(--clr-primary-a40);
+  }
 }
 
 .testimonial-title {
-  color: #777;
+  color: var(--clr-primary-a40);
   font-size: 0.9rem;
 }
 
+.dark .testimonial-title {
+  color: var(--clr-primary-a40);
+}
+
 .testimonial-text {
-  color: #222;
+  color: var(--clr-primary-a10);
   font-size: 1rem;
   margin: 0;
   word-break: break-word;
 }
 
-.dark p {
-  color: var(--clr-light-a0);
+.dark .testimonial-text {
+  color: var(--clr-primary-a40);
 }
