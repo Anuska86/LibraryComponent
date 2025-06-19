@@ -31,7 +31,7 @@
 .card-body {
   padding: 8px 12px;
   margin: 12px;
-  background-color: var(--clr-surface-tonal-a10);
+  background-color: var(--clr-primary-a50);
   border-radius: 6px;
   flex: 1;
   display: flex;
@@ -41,7 +41,7 @@
 }
 
 .dark .card-body {
-  background-color: var(--clr-surface-tonal-a20);
+  background-color: var(--clr-surface-tonal-a30);
 }
 
 .card-title {
