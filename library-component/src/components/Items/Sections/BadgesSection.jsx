@@ -11,6 +11,7 @@ export default function BadgesSection() {
           display: "flex",
           gap: "24px",
           alignItems: "center",
+          justifyContent: "center",
           margin: "16px 0",
         }}
       >
@@ -37,6 +38,7 @@ export default function BadgesSection() {
           display: "flex",
           gap: "24px",
           alignItems: "center",
+          justifyContent: "center",
           margin: "16px 0",
         }}
       >
@@ -63,6 +65,7 @@ export default function BadgesSection() {
           display: "flex",
           gap: "24px",
           alignItems: "flex-end",
+          justifyContent: "center",
           margin: "16px 0",
         }}
       >
@@ -74,11 +77,11 @@ export default function BadgesSection() {
           <Badge label="Sucess" color="success" variant="rectangle" />
           <div style={{ fontSize: 16, marginTop: 8 }}>Success Rectangle</div>
         </div>
-         <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center" }}>
           <Badge label="Warning" color="warning" variant="triangle" />
           <div style={{ fontSize: 16, marginTop: 8 }}>Warning Triangle</div>
         </div>
-         <div style={{ textAlign: "center" }}>
+        <div style={{ textAlign: "center" }}>
           <Badge label="Error" color="danger" variant="octagon" />
           <div style={{ fontSize: 16, marginTop: 8 }}>Error Octagon</div>
         </div>

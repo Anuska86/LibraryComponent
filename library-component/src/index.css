@@ -104,7 +104,7 @@ p {
 }
 
 .dark p {
-  color: var(--clr-surface-a20);
+  color: var(--clr-light-a0);
 }
 
 /* Navegation styles */
