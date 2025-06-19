@@ -4,7 +4,16 @@ import "../../../Styles/Banner.css";
 
 export default function BannersSection() {
   return (
-    <div>
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "16px",
+        gap: "16px"
+      }}
+    >
       <h1 className="title">Banners Section</h1>
       <Banner
         generalMessage="For your information"
@@ -12,7 +21,7 @@ export default function BannersSection() {
         type="info"
       />
       <Banner
-        generalMessage="well done!"
+        generalMessage="Well done!"
         message="All the updates are up to date"
         type="success"
       />

@@ -21,7 +21,7 @@ export default function Banner({
   return (
     <div
       className={`banner banner-${type}`}
-      style={{ display: "flex", alignItems: "center" }}
+      style={{ display: "flex", alignItems: "center",  justifyContent: "center"}}
     >
       {showIcon && iconMap[type]}
       <p className="banner-message" style={{ margin: 0 }}>
