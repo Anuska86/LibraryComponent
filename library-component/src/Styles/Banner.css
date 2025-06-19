@@ -1,6 +1,4 @@
-/* =========================
-   Base Styles
-   ========================= */
+/*Base Styles*/
 
 .page-content {
   background-color: var(--clr-surface-a20);
@@ -38,9 +36,7 @@
   background: var(--clr-surface-a20);
 }
 
-/* =========================
-   Banner Styles
-   ========================= */
+/*Banner Styles*/
 
 .banner {
   padding: 1rem;
@@ -69,11 +65,21 @@
   color: var(--clr-light-a0);
 }
 
-.banner-message {
-  color: whitesmoke;
-}
-
 .dark .banner-info {
   background-color: var(--clr-primary-a0);
+  color: var(--clr-light-a0);
+}
+
+/*Banner Components*/
+
+svg {
+  margin-right: 20px;
+}
+
+.banner-message {
+  color: var(--clr-light-a0);
+}
+
+.banner-generalMessage {
   color: var(--clr-light-a0);
 }

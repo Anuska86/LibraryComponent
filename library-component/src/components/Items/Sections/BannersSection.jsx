@@ -6,10 +6,26 @@ export default function BannersSection() {
   return (
     <div>
       <h1 className="title">Banners Section</h1>
-      <Banner message="Welcome to my world!" type="info" />
-      <Banner message="Limited-time offer!" type="success" />
-      <Banner message="Scheduled maintenance at 2am" type="warning" />
-      <Banner message="Service unavailable" type="danger" />
+      <Banner
+        generalMessage="For your information"
+        message="There are new updates availables"
+        type="info"
+      />
+      <Banner
+        generalMessage="well done!"
+        message="All the updates are up to date"
+        type="success"
+      />
+      <Banner
+        generalMessage="Attention!"
+        message="Scheduled maintenance at 2am"
+        type="warning"
+      />
+      <Banner
+        generalMessage="Service unavailable"
+        message="There is a conection problem"
+        type="danger"
+      />
     </div>
   );
 }
