@@ -332,6 +332,18 @@ body.dark button {
   text-align: center;
 }
 
+.home-flex {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  align-items: flex-start;
+}
+
+.home-menu {
+  flex: 1;
+  min-width: 180px;
+}
+
 /*Page Content */
 
 .bg-primary {
@@ -507,6 +519,7 @@ button.button-lg.menu-button:hover {
   align-items: center;
   user-select: none;
   border-radius: 6px;
+  height: 60px;
 }
 
 .menu-item:hover {
@@ -533,6 +546,38 @@ button.button-lg.menu-button:hover {
 
 .dark .menu-item:not(:last-child) {
   border-bottom: 1px solid var(--clr-primary-a0);
+}
+
+/*npm section*/
+
+.installation-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--clr-primary-a40);
+  padding: 1.5rem;
+  border-radius: 8px;
+  min-width: 260px;
+  height: 420px;
+}
+.install-command {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.copy-button {
+  padding: 0.3rem 0.8rem;
+  border: none;
+  background-color: var(--clr-surface-a30);
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.copy-button:hover {
+  background-color: var(--clr-primary-a0);
 }
 
 /* Accessibility Styles */
