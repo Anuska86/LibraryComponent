@@ -335,13 +335,23 @@ body.dark button {
 .home-flex {
   display: flex;
   gap: 2rem;
-  margin-top: 2rem;
-  align-items: flex-start;
+  margin: 2rem;
+  align-items: stretch;
 }
 
 .home-menu {
   flex: 1;
-  min-width: 180px;
+  min-width: 260px;
+  margin: 0;
+  padding: 2rem;
+  background: var(--clr-surface-a0);
+  border-radius: 8px;
+  box-sizing: border-box;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 /*Page Content */
@@ -551,15 +561,18 @@ button.button-lg.menu-button:hover {
 /*npm section*/
 
 .installation-section {
+  flex: 1;
+  margin: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--clr-primary-a40);
-  padding: 1.5rem;
+  background: var(--clr-surface-a0);
+  box-sizing: border-box;
+  padding: 2rem;
   border-radius: 8px;
   min-width: 260px;
-  height: 420px;
+  height: auto;
 }
 .install-command {
   display: flex;
@@ -571,13 +584,14 @@ button.button-lg.menu-button:hover {
 .copy-button {
   padding: 0.3rem 0.8rem;
   border: none;
-  background-color: var(--clr-surface-a30);
-  color: #fff;
-  border-radius: 4px;
+  background-color: var(--clr-primary-a20);
+  border: 1px solid var(--clr-primary-a20);
+  color: #eee9db;
+  border-radius: 6px;
   cursor: pointer;
 }
 .copy-button:hover {
-  background-color: var(--clr-primary-a0);
+  background-color: var(--clr-primary-a30);
 }
 
 /* Accessibility Styles */
