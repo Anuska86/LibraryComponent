@@ -381,6 +381,8 @@ body.dark button {
 .home-menu h2 {
   margin-top: 0;
   margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .home-menu-content {
@@ -612,6 +614,8 @@ button.button-lg.menu-button:hover {
 .installation-section h2 {
   margin-top: 0;
   margin-bottom: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .installation-content {
@@ -619,6 +623,7 @@ button.button-lg.menu-button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: var(--clr-primary-a20);
 }
 
 .install-command {
