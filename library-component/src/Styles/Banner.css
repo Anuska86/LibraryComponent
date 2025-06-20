@@ -8,7 +8,6 @@
 
 .title {
   color: var(--clr-dark-a0);
-  background-color: var(--clr-surface-a20);
 }
 
 .title:after,
@@ -19,7 +18,6 @@
   border-bottom: 1px solid var(--clr-primary-a0);
   border-top: 1px solid var(--clr-primary-a0);
   height: 5px;
-  background-color: var(--clr-surface-a20);
 }
 
 .dark .title {
@@ -29,7 +27,6 @@
 .dark .title:before {
   border-bottom: 1px solid var(--clr-primary-a40);
   border-top: 1px solid var(--clr-primary-a40);
-  background-color: var(--clr-surface-a20);
 }
 
 .dark div#root {

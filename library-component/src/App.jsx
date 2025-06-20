@@ -3,6 +3,7 @@ import { ThemeContext, ThemeButton } from "./components/Button/ThemeButton";
 import "../src/index.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Items/Sections/Home";
+import { IoLogoReact } from "react-icons/io5";
 import BadgesSection from "../src/components/Items/Sections/BadgesSection";
 import BannersSection from "./components/Items/Sections/BannersSection";
 import CardsSection from "./components/Items/Sections/CardsSection";
@@ -20,8 +21,12 @@ function App() {
   return (
     <BrowserRouter>
       <main className={`app-container ${theme}`}>
-        <header>
-          <nav>
+        <header className="main-header">
+          <span className="react-logo" aria-label="logo" role="img">
+            <IoLogoReact size={48} />
+          </span>
+          <div className="nav-welcome">Welcome to Anuska's Library!</div>
+          <nav className="navbar">
             <Link to="/">Home</Link>
           </nav>
         </header>

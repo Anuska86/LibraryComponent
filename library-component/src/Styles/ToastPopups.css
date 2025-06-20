@@ -4,13 +4,18 @@
   flex-direction: column;
   align-items: center;
   padding: 20px;
-  background-color: var(--clr-surface-a20);
   color: var(--clr-dark-a0);
 }
 .page-content {
   align-items: center;
 }
+.position {
+  color: var(--clr-primary-a10);
+}
 
+.dark .position {
+  color: var(--clr-light-a0);
+}
 /*Toast styles*/
 
 .toast {

@@ -30,7 +30,7 @@ export default function ToastPopupsSection() {
     <div className="toast-popups-section">
       <h2 className="title">Toast Demo</h2>
       <div style={{ marginBottom: 16 }}>
-        <span>Position: </span>
+        <span className="position">Position: </span>
         <select value={position} onChange={(e) => setPosition(e.target.value)}>
           {positions.map((pos) => (
             <option key={pos.value} value={pos.value}>
