@@ -6,7 +6,6 @@ export default function useToggle(initialValue = false, onToggle = () => {}) {
 
   function toggle() {
     setOn((prevOn) => !prevOn);
-    console.log("Toggled!");
   }
 
   useEffectOnUpdate(onToggle, [on]);

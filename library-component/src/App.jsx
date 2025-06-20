@@ -24,49 +24,58 @@ function App() {
     <BrowserRouter>
       <main className={`app-container ${theme}`}>
         <header className="main-header">
-          <span className="react-logo" aria-label="logo" role="img">
-            <IoLogoReact size={48} />
-          </span>
-          <div className="nav-welcome">Welcome to Anuska's Library!</div>
-          <nav className="navbar">
-            <Link to="/">Home</Link>
-          </nav>
-          <Menu>
-            <Menu.Button>Menu</Menu.Button>
-            <Menu.Dropdown>
-              <Menu.Item>
-                <Link className="link-button" to="/badges">
-                  Badges
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                {" "}
-                <Link className="link-button" to="/banners">
-                  Banners
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/cards">
-                  Cards
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/testimonials">
-                  Testimonials
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/tooltips">
-                  Tooltips
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/toast-popups">
-                  Toast Popups
-                </Link>
-              </Menu.Item>
-            </Menu.Dropdown>
-          </Menu>
+          <div className="header-left">
+            <span className="react-logo" aria-label="logo" role="img">
+              <IoLogoReact size={48} />
+            </span>
+          </div>
+          <div className="header-center">
+            <div className="nav-welcome">Welcome to Anuska's Library!</div>
+          </div>
+          <div className="header-right">
+            <nav className="navbar">
+              <Link to="/" className="link-button">
+                Home
+              </Link>
+
+              <Menu>
+                <Menu.Button>Menu</Menu.Button>
+                <Menu.Dropdown>
+                  <Menu.Item>
+                    <Link className="link-button" to="/badges">
+                      Badges
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    {" "}
+                    <Link className="link-button" to="/banners">
+                      Banners
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Link className="link-button" to="/cards">
+                      Cards
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Link className="link-button" to="/testimonials">
+                      Testimonials
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Link className="link-button" to="/tooltips">
+                      Tooltips
+                    </Link>
+                  </Menu.Item>
+                  <Menu.Item>
+                    <Link className="link-button" to="/toast-popups">
+                      Toast Popups
+                    </Link>
+                  </Menu.Item>
+                </Menu.Dropdown>
+              </Menu>
+            </nav>
+          </div>
         </header>
         <div className="content">
           <div className="page-content">

@@ -126,16 +126,18 @@ a:hover {
 }
 
 nav {
-  margin-left: auto;
   display: flex;
   gap: 10px;
 }
 
 .navbar {
-  flex: 1;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: auto;
 }
+
 .react-logo {
   flex: 1;
   display: flex;
@@ -150,6 +152,7 @@ nav {
 .dark .react-logo svg {
   fill: var(--clr-primary-a30);
 }
+
 .nav-welcome {
   flex: 2;
   text-align: center;
@@ -169,9 +172,9 @@ header {
   background: var(--clr-primary-a40);
   color: var(--clr-light-a0);
   display: flex;
+  padding-inline: 0;
   justify-content: space-between;
   align-items: center;
-  padding-inline: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   height: 110px;
   width: 100%;
@@ -181,18 +184,40 @@ header {
   flex: 0 0 auto;
 }
 
+.dark header {
+  background: var(--clr-surface-a10);
+  color: var(--clr-light-a0);
+  border-color: var(--clr-primary-a0);
+}
+
 .main-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 16px 0;
   position: relative;
+  width: 100%;
+}
+.header-left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
 
-.dark header {
-  background: var(--clr-surface-a10);
-  color: var(--clr-light-a0);
-  border-color: var(--clr-primary-a0);
+.header-center {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+ 
 }
 
 header a {
@@ -344,7 +369,7 @@ body.dark button {
   min-width: 260px;
   margin: 0;
   padding: 2rem;
-  background: var(--clr-surface-a0);
+  background: var(--clr-surface-a10);
   border-radius: 8px;
   box-sizing: border-box;
   height: auto;
@@ -496,8 +521,8 @@ body.dark button {
 .menu {
   position: relative;
   display: inline-block;
-  margin: 0 auto;
-  width: 200px;
+  margin: 0;
+  width: 120px;
 }
 
 button.button-lg.menu-button {
@@ -567,7 +592,7 @@ button.button-lg.menu-button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: var(--clr-surface-a0);
+  background: var(--clr-surface-a10);
   box-sizing: border-box;
   padding: 2rem;
   border-radius: 8px;
