@@ -43,7 +43,7 @@ body.dark .toast {
   padding: 0.6em 1.2em;
   border-radius: 6px;
   transition: border-color 0.25s;
-  margin: 10px;
+  margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
