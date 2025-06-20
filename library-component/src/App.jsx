@@ -4,6 +4,8 @@ import "../src/index.css";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import Home from "./components/Items/Sections/Home";
 import { IoLogoReact } from "react-icons/io5";
+import Menu from "./components/Menu/MenuIndex";
+import MenuDropdown from "./components/Menu/MenuDropdown";
 import BadgesSection from "../src/components/Items/Sections/BadgesSection";
 import BannersSection from "./components/Items/Sections/BannersSection";
 import CardsSection from "./components/Items/Sections/CardsSection";
@@ -29,6 +31,42 @@ function App() {
           <nav className="navbar">
             <Link to="/">Home</Link>
           </nav>
+          <Menu>
+            <Menu.Button>Menu</Menu.Button>
+            <Menu.Dropdown>
+              <Menu.Item>
+                <Link className="link-button" to="/badges">
+                  Badges
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                {" "}
+                <Link className="link-button" to="/banners">
+                  Banners
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link className="link-button" to="/cards">
+                  Cards
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link className="link-button" to="/testimonials">
+                  Testimonials
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link className="link-button" to="/tooltips">
+                  Tooltips
+                </Link>
+              </Menu.Item>
+              <Menu.Item>
+                <Link className="link-button" to="/toast-popups">
+                  Toast Popups
+                </Link>
+              </Menu.Item>
+            </Menu.Dropdown>
+          </Menu>
         </header>
         <div className="content">
           <div className="page-content">

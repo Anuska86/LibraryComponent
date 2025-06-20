@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Menu from "../../Menu/MenuIndex";
+
 import Button from "../../Button/Button";
 
 export default function Home() {
@@ -21,42 +21,39 @@ export default function Home() {
       </p>
       <div className="home-flex">
         <div className="home-menu">
-          <Menu>
-            <Menu.Button>Menu</Menu.Button>
-            <Menu.Dropdown>
-              <Menu.Item>
-                <Link className="link-button" to="/badges">
-                  Badges
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                {" "}
-                <Link className="link-button" to="/banners">
-                  Banners
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/cards">
-                  Cards
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/testimonials">
-                  Testimonials
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/tooltips">
-                  Tooltips
-                </Link>
-              </Menu.Item>
-              <Menu.Item>
-                <Link className="link-button" to="/toast-popups">
-                  Toast Popups
-                </Link>
-              </Menu.Item>
-            </Menu.Dropdown>
-          </Menu>
+          <h2>Components</h2>
+          <ol style={{ textAlign: "left" }}>
+            <li>
+              <Link className="link-button" to="/badges">
+                Badges
+              </Link>
+            </li>
+            <li>
+              <Link className="link-button" to="/banners">
+                Banners
+              </Link>
+            </li>
+            <li>
+              <Link className="link-button" to="/cards">
+                Cards
+              </Link>
+            </li>
+            <li>
+              <Link className="link-button" to="/testimonials">
+                Testimonials
+              </Link>
+            </li>
+            <li>
+              <Link className="link-button" to="/tooltips">
+                Tooltips
+              </Link>
+            </li>
+            <li>
+              <Link className="link-button" to="/toast-popups">
+                Toast Popups
+              </Link>
+            </li>
+          </ol>
         </div>
 
         <section className="installation-section">
