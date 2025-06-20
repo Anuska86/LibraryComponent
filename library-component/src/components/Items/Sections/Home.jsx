@@ -22,65 +22,69 @@ export default function Home() {
       <div className="home-flex">
         <div className="home-menu">
           <h2>Components</h2>
-          <ol style={{ textAlign: "left" }}>
-            <li>
-              <Link className="link-button" to="/badges">
-                Badges
-              </Link>
-            </li>
-            <li>
-              <Link className="link-button" to="/banners">
-                Banners
-              </Link>
-            </li>
-            <li>
-              <Link className="link-button" to="/cards">
-                Cards
-              </Link>
-            </li>
-            <li>
-              <Link className="link-button" to="/testimonials">
-                Testimonials
-              </Link>
-            </li>
-            <li>
-              <Link className="link-button" to="/tooltips">
-                Tooltips
-              </Link>
-            </li>
-            <li>
-              <Link className="link-button" to="/toast-popups">
-                Toast Popups
-              </Link>
-            </li>
-          </ol>
+          <div className="home-menu-content">
+            <ol style={{ textAlign: "left" }}>
+              <li>
+                <Link className="link-button" to="/badges">
+                  Badges
+                </Link>
+              </li>
+              <li>
+                <Link className="link-button" to="/banners">
+                  Banners
+                </Link>
+              </li>
+              <li>
+                <Link className="link-button" to="/cards">
+                  Cards
+                </Link>
+              </li>
+              <li>
+                <Link className="link-button" to="/testimonials">
+                  Testimonials
+                </Link>
+              </li>
+              <li>
+                <Link className="link-button" to="/tooltips">
+                  Tooltips
+                </Link>
+              </li>
+              <li>
+                <Link className="link-button" to="/toast-popups">
+                  Toast Popups
+                </Link>
+              </li>
+            </ol>
+          </div>
         </div>
 
-        <section className="installation-section">
+        <div className="installation-section">
           <h2>Get Started</h2>
-          <p>Install the library using npm:</p>
-          <div className="install-command">
-            <code>npm install anuska-library</code>
-            <Button
-              className="copy-button"
-              variant="secondary"
-              size="lg"
-              arial-controls="copyButton"
-              onClick={handleCopy}
-            >
-              Copy
-            </Button>
+          <div className="installation-content">
+            <p>Install the library using npm:</p>
+            <div className="install-command">
+              <code>npm install anuska-library</code>
+              <Button
+                className="copy-button"
+                variant="secondary"
+                size="lg"
+                arial-controls="copyButton"
+                onClick={handleCopy}
+              >
+                Copy
+              </Button>
+            </div>
+            <p>
+              <a
+                href="https:www.npmjsx.package/anuska-library"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                View on npm
+              </a>
+            </p>
           </div>
-          <p>
-            <a
-              href="https:www.npmjsx.package/anuska-library"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View on npm
-            </a>
-          </p>
-        </section>
+        </div>
       </div>
     </div>
   );
