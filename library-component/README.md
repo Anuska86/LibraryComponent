@@ -22,3 +22,6 @@ MORE:
 npm install classnames
 npm install react-router-dom
 npm install react-icons
+
+LIBRARY:
+npm run build

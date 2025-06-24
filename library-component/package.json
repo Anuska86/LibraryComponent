@@ -1,8 +1,10 @@
 {
-  "name": "library-component",
-  "private": true,
-  "version": "0.0.0",
+  "name": "anuska-library",
+  "private": false,
+  "version": "1.0.0",
   "type": "module",
+  "description": "A library component for React applications",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
