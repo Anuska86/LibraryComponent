@@ -75,13 +75,20 @@ export default function Home() {
               </Button>
             </div>
             <p>
-              <a
-                href="https:www.npmjsx.package/anuska-library"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Button
+                variant="primary"
+                size="lg "
+                className="npm-button"
+                aria-controls="npmInstall"
               >
-                View on npm
-              </a>
+                <a
+                  href="https://www.npmjs.com/package/anuska-library"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View on npm
+                </a>
+              </Button>
             </p>
           </div>
         </div>

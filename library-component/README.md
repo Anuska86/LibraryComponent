@@ -25,3 +25,5 @@ npm install react-icons
 
 LIBRARY:
 npm run build
+npm login
+npm publish --access public

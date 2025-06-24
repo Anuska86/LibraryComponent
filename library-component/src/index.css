@@ -646,6 +646,23 @@ button.button-lg.copy-button:hover {
   background-color: var(--clr-primary-a30);
 }
 
+button.button-lg.npm-button {
+  background-color: var(--clr-primary-a20);
+  border-radius: 6px;
+  border: 1px solid var(--clr-primary-a20);
+  color: #eee9db;
+}
+button.button-lg.npm-button a {
+  color: inherit;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+button.button-lg.npm-button:hover {
+  background-color: var(--clr-primary-a30);
+}
+
 /* Accessibility Styles */
 .sr-only {
   position: absolute;
